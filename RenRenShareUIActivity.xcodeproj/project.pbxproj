@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		189DC43918273CF000EF43CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189DC43818273CF000EF43CE /* Foundation.framework */; };
+		189DC43B18273CF000EF43CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189DC43A18273CF000EF43CE /* CoreGraphics.framework */; };
+		189DC43D18273CF000EF43CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189DC43C18273CF000EF43CE /* UIKit.framework */; };
+		189DC44318273CF000EF43CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 189DC44118273CF000EF43CE /* InfoPlist.strings */; };
+		189DC44518273CF000EF43CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DC44418273CF000EF43CE /* main.m */; };
+		189DC44918273CF000EF43CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DC44818273CF000EF43CE /* AppDelegate.m */; };
+		189DC44C18273CF000EF43CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189DC44A18273CF000EF43CE /* Main.storyboard */; };
+		189DC44F18273CF000EF43CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DC44E18273CF000EF43CE /* ViewController.m */; };
+		189DC45118273CF000EF43CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189DC45018273CF000EF43CE /* Images.xcassets */; };
+		189DC45818273CF000EF43CE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189DC45718273CF000EF43CE /* XCTest.framework */; };
+		189DC45918273CF000EF43CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189DC43818273CF000EF43CE /* Foundation.framework */; };
+		189DC45A18273CF000EF43CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189DC43C18273CF000EF43CE /* UIKit.framework */; };
+		189DC46218273CF000EF43CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 189DC46018273CF000EF43CE /* InfoPlist.strings */; };
+		189DC46418273CF000EF43CE /* RenRenShareUIActivityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DC46318273CF000EF43CE /* RenRenShareUIActivityTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		189DC45B18273CF000EF43CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189DC42D18273CF000EF43CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 189DC43418273CF000EF43CE;
+			remoteInfo = RenRenShareUIActivity;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		189DC43518273CF000EF43CE /* RenRenShareUIActivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RenRenShareUIActivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		189DC43818273CF000EF43CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		189DC43A18273CF000EF43CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		189DC43C18273CF000EF43CE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		189DC44018273CF000EF43CE /* RenRenShareUIActivity-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RenRenShareUIActivity-Info.plist"; sourceTree = "<group>"; };
+		189DC44218273CF000EF43CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		189DC44418273CF000EF43CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		189DC44618273CF000EF43CE /* RenRenShareUIActivity-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RenRenShareUIActivity-Prefix.pch"; sourceTree = "<group>"; };
+		189DC44718273CF000EF43CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		189DC44818273CF000EF43CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		189DC44B18273CF000EF43CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		189DC44D18273CF000EF43CE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		189DC44E18273CF000EF43CE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		189DC45018273CF000EF43CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		189DC45618273CF000EF43CE /* RenRenShareUIActivityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RenRenShareUIActivityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		189DC45718273CF000EF43CE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		189DC45F18273CF000EF43CE /* RenRenShareUIActivityTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RenRenShareUIActivityTests-Info.plist"; sourceTree = "<group>"; };
+		189DC46118273CF000EF43CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		189DC46318273CF000EF43CE /* RenRenShareUIActivityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenRenShareUIActivityTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		189DC43218273CF000EF43CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189DC43B18273CF000EF43CE /* CoreGraphics.framework in Frameworks */,
+				189DC43D18273CF000EF43CE /* UIKit.framework in Frameworks */,
+				189DC43918273CF000EF43CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		189DC45318273CF000EF43CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189DC45818273CF000EF43CE /* XCTest.framework in Frameworks */,
+				189DC45A18273CF000EF43CE /* UIKit.framework in Frameworks */,
+				189DC45918273CF000EF43CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		189DC42C18273CF000EF43CE = {
+			isa = PBXGroup;
+			children = (
+				189DC43E18273CF000EF43CE /* RenRenShareUIActivity */,
+				189DC45D18273CF000EF43CE /* RenRenShareUIActivityTests */,
+				189DC43718273CF000EF43CE /* Frameworks */,
+				189DC43618273CF000EF43CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		189DC43618273CF000EF43CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				189DC43518273CF000EF43CE /* RenRenShareUIActivity.app */,
+				189DC45618273CF000EF43CE /* RenRenShareUIActivityTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		189DC43718273CF000EF43CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				189DC43818273CF000EF43CE /* Foundation.framework */,
+				189DC43A18273CF000EF43CE /* CoreGraphics.framework */,
+				189DC43C18273CF000EF43CE /* UIKit.framework */,
+				189DC45718273CF000EF43CE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		189DC43E18273CF000EF43CE /* RenRenShareUIActivity */ = {
+			isa = PBXGroup;
+			children = (
+				189DC44718273CF000EF43CE /* AppDelegate.h */,
+				189DC44818273CF000EF43CE /* AppDelegate.m */,
+				189DC44A18273CF000EF43CE /* Main.storyboard */,
+				189DC44D18273CF000EF43CE /* ViewController.h */,
+				189DC44E18273CF000EF43CE /* ViewController.m */,
+				189DC45018273CF000EF43CE /* Images.xcassets */,
+				189DC43F18273CF000EF43CE /* Supporting Files */,
+			);
+			path = RenRenShareUIActivity;
+			sourceTree = "<group>";
+		};
+		189DC43F18273CF000EF43CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				189DC44018273CF000EF43CE /* RenRenShareUIActivity-Info.plist */,
+				189DC44118273CF000EF43CE /* InfoPlist.strings */,
+				189DC44418273CF000EF43CE /* main.m */,
+				189DC44618273CF000EF43CE /* RenRenShareUIActivity-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		189DC45D18273CF000EF43CE /* RenRenShareUIActivityTests */ = {
+			isa = PBXGroup;
+			children = (
+				189DC46318273CF000EF43CE /* RenRenShareUIActivityTests.m */,
+				189DC45E18273CF000EF43CE /* Supporting Files */,
+			);
+			path = RenRenShareUIActivityTests;
+			sourceTree = "<group>";
+		};
+		189DC45E18273CF000EF43CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				189DC45F18273CF000EF43CE /* RenRenShareUIActivityTests-Info.plist */,
+				189DC46018273CF000EF43CE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		189DC43418273CF000EF43CE /* RenRenShareUIActivity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 189DC46718273CF000EF43CE /* Build configuration list for PBXNativeTarget "RenRenShareUIActivity" */;
+			buildPhases = (
+				189DC43118273CF000EF43CE /* Sources */,
+				189DC43218273CF000EF43CE /* Frameworks */,
+				189DC43318273CF000EF43CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RenRenShareUIActivity;
+			productName = RenRenShareUIActivity;
+			productReference = 189DC43518273CF000EF43CE /* RenRenShareUIActivity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		189DC45518273CF000EF43CE /* RenRenShareUIActivityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 189DC46A18273CF000EF43CE /* Build configuration list for PBXNativeTarget "RenRenShareUIActivityTests" */;
+			buildPhases = (
+				189DC45218273CF000EF43CE /* Sources */,
+				189DC45318273CF000EF43CE /* Frameworks */,
+				189DC45418273CF000EF43CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				189DC45C18273CF000EF43CE /* PBXTargetDependency */,
+			);
+			name = RenRenShareUIActivityTests;
+			productName = RenRenShareUIActivityTests;
+			productReference = 189DC45618273CF000EF43CE /* RenRenShareUIActivityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		189DC42D18273CF000EF43CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = zzz;
+				TargetAttributes = {
+					189DC45518273CF000EF43CE = {
+						TestTargetID = 189DC43418273CF000EF43CE;
+					};
+				};
+			};
+			buildConfigurationList = 189DC43018273CF000EF43CE /* Build configuration list for PBXProject "RenRenShareUIActivity" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 189DC42C18273CF000EF43CE;
+			productRefGroup = 189DC43618273CF000EF43CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				189DC43418273CF000EF43CE /* RenRenShareUIActivity */,
+				189DC45518273CF000EF43CE /* RenRenShareUIActivityTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		189DC43318273CF000EF43CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189DC45118273CF000EF43CE /* Images.xcassets in Resources */,
+				189DC44318273CF000EF43CE /* InfoPlist.strings in Resources */,
+				189DC44C18273CF000EF43CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		189DC45418273CF000EF43CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189DC46218273CF000EF43CE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		189DC43118273CF000EF43CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189DC44F18273CF000EF43CE /* ViewController.m in Sources */,
+				189DC44918273CF000EF43CE /* AppDelegate.m in Sources */,
+				189DC44518273CF000EF43CE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		189DC45218273CF000EF43CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189DC46418273CF000EF43CE /* RenRenShareUIActivityTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		189DC45C18273CF000EF43CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 189DC43418273CF000EF43CE /* RenRenShareUIActivity */;
+			targetProxy = 189DC45B18273CF000EF43CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		189DC44118273CF000EF43CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				189DC44218273CF000EF43CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		189DC44A18273CF000EF43CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				189DC44B18273CF000EF43CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		189DC46018273CF000EF43CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				189DC46118273CF000EF43CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		189DC46518273CF000EF43CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		189DC46618273CF000EF43CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		189DC46818273CF000EF43CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RenRenShareUIActivity/RenRenShareUIActivity-Prefix.pch";
+				INFOPLIST_FILE = "RenRenShareUIActivity/RenRenShareUIActivity-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		189DC46918273CF000EF43CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RenRenShareUIActivity/RenRenShareUIActivity-Prefix.pch";
+				INFOPLIST_FILE = "RenRenShareUIActivity/RenRenShareUIActivity-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		189DC46B18273CF000EF43CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RenRenShareUIActivity.app/RenRenShareUIActivity";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RenRenShareUIActivity/RenRenShareUIActivity-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RenRenShareUIActivityTests/RenRenShareUIActivityTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		189DC46C18273CF000EF43CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RenRenShareUIActivity.app/RenRenShareUIActivity";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RenRenShareUIActivity/RenRenShareUIActivity-Prefix.pch";
+				INFOPLIST_FILE = "RenRenShareUIActivityTests/RenRenShareUIActivityTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		189DC43018273CF000EF43CE /* Build configuration list for PBXProject "RenRenShareUIActivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				189DC46518273CF000EF43CE /* Debug */,
+				189DC46618273CF000EF43CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		189DC46718273CF000EF43CE /* Build configuration list for PBXNativeTarget "RenRenShareUIActivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				189DC46818273CF000EF43CE /* Debug */,
+				189DC46918273CF000EF43CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		189DC46A18273CF000EF43CE /* Build configuration list for PBXNativeTarget "RenRenShareUIActivityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				189DC46B18273CF000EF43CE /* Debug */,
+				189DC46C18273CF000EF43CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 189DC42D18273CF000EF43CE /* Project object */;
+}
