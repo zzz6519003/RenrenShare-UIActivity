@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "RenRenShareActivity.h"
 
 @interface ViewController ()
 
@@ -24,6 +25,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)shareRenren:(id)sender {
+    RenRenShareActivity *renren = [[RenRenShareActivity alloc] init];
+    UIActivityViewController *vc = [[UIActivityViewController alloc] initWithActivityItems:@[@"adfs", nil] applicationActivities:@[renren, nil]];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 @end
