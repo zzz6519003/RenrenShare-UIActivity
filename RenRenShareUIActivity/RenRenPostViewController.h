@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "Renren.h"
 
+@protocol Activity <NSObject>
+
+- (void)activityFinish;
+
+@end
 @interface RenRenPostViewController : UIViewController <RenrenDelegate>
 
+@property (weak, nonatomic) id<Activity> delegate;
 @end

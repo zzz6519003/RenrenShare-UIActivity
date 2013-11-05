@@ -46,8 +46,16 @@
 }
 
 - (UIViewController *)activityViewController {
-    return [[RenRenPostViewController alloc] initWithNibName:@"RenRenPostViewController" bundle:nil];
+    RenRenPostViewController *rr = [[RenRenPostViewController alloc] initWithNibName:@"RenRenPostViewController" bundle:nil];
+    rr.delegate = self;
+    return rr;
     
-    
+}
+
+- (void)performActivity {
+    [self activityDidFinish:YES];
+}
+- (void)activityFinish {
+    [self activityDidFinish:YES];
 }
 @end

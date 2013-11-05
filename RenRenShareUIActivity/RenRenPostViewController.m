@@ -39,17 +39,26 @@
 
 - (IBAction)done:(id)sender {
     Renren *renren = [Renren sharedRenren];
+    if (![renren isSessionValid]) {
+        // login renren
+        [renren authorizationWithPermisson:nil andDelegate:self];
+        return;
+    }
+
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:10];
     [params setObject:@"status.set" forKey:@"method"];
     [params setObject:self.postBody.text forKey:@"status"];
     [renren requestWithParams:params andDelegate:self];
-}
-
-- (IBAction)dismiss:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (IBAction)dismiss:(id)sender {
+    [self.delegate activityFinish];
+//    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (void)renren:(Renren *)renren requestDidReturnResponse:(ROResponse *)response {
+
 }
 
 - (void)renren:(Renren *)renren requestFailWithError:(ROError *)error {

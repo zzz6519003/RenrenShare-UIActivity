@@ -29,7 +29,8 @@
 
 - (IBAction)shareRenren:(id)sender {
     RenRenShareActivity *renren = [[RenRenShareActivity alloc] init];
-    UIActivityViewController *vc = [[UIActivityViewController alloc] initWithActivityItems:@[@"adfs", nil] applicationActivities:@[renren, nil]];
+    UIActivityViewController *vc = [[UIActivityViewController alloc] initWithActivityItems:@[@"adfs"] applicationActivities:@[renren]];
+    vc.completionHandler = nil;
     [self presentViewController:vc animated:YES completion:nil];
 }
 
