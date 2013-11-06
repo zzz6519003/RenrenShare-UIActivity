@@ -22,7 +22,7 @@
 }
 
 - (UIImage *)activityImage {
-    return [UIImage imageNamed:@"ruby.png"];
+    return [UIImage imageNamed:@"renren.png"];
 }
 
 

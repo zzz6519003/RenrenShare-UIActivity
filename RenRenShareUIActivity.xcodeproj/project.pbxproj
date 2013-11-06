@@ -96,6 +96,8 @@
 		189DC61C18274DA400EF43CE /* RenRenShareActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DC61818274DA400EF43CE /* RenRenShareActivity.m */; };
 		189DC61D18274DA400EF43CE /* RenRenPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DC61A18274DA400EF43CE /* RenRenPostViewController.m */; };
 		189DC61E18274DA400EF43CE /* RenRenPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189DC61B18274DA400EF43CE /* RenRenPostViewController.xib */; };
+		18B43330182A909D00103FC8 /* renren@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B4332F182A909D00103FC8 /* renren@2x.png */; };
+		18B43332182A910000103FC8 /* renren.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B43331182A910000103FC8 /* renren.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -257,6 +259,8 @@
 		189DC61918274DA400EF43CE /* RenRenPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenRenPostViewController.h; sourceTree = "<group>"; };
 		189DC61A18274DA400EF43CE /* RenRenPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenRenPostViewController.m; sourceTree = "<group>"; };
 		189DC61B18274DA400EF43CE /* RenRenPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RenRenPostViewController.xib; sourceTree = "<group>"; };
+		18B4332F182A909D00103FC8 /* renren@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "renren@2x.png"; sourceTree = "<group>"; };
+		18B43331182A910000103FC8 /* renren.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = renren.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -371,6 +375,8 @@
 		189DC54418274C4E00EF43CE /* UIActivity */ = {
 			isa = PBXGroup;
 			children = (
+				18B43331182A910000103FC8 /* renren.png */,
+				18B4332F182A909D00103FC8 /* renren@2x.png */,
 				189DC61718274DA400EF43CE /* RenRenShareActivity.h */,
 				189DC61818274DA400EF43CE /* RenRenShareActivity.m */,
 				189DC61918274DA400EF43CE /* RenRenPostViewController.h */,
@@ -713,6 +719,7 @@
 				189DC44C18273CF000EF43CE /* Main.storyboard in Resources */,
 				189DC5EA18274C7F00EF43CE /* PayLogo.png in Resources */,
 				189DC5EB18274C7F00EF43CE /* PayLogo@2x.png in Resources */,
+				18B43332182A910000103FC8 /* renren.png in Resources */,
 				189DC5F018274C7F00EF43CE /* RepairButton.png in Resources */,
 				189DC5E118274C7F00EF43CE /* bottom-bar@2x.png in Resources */,
 				189DC5E418274C7F00EF43CE /* close_selected.png in Resources */,
@@ -731,6 +738,7 @@
 				189DC61E18274DA400EF43CE /* RenRenPostViewController.xib in Resources */,
 				189DC5E918274C7F00EF43CE /* input-frame@2x.png in Resources */,
 				189DC5F118274C7F00EF43CE /* RepairButton@2x.png in Resources */,
+				18B43330182A909D00103FC8 /* renren@2x.png in Resources */,
 				189DC5F218274C7F00EF43CE /* small-button-normal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1016,6 +1024,7 @@
 				189DC46918273CF000EF43CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		189DC46A18273CF000EF43CE /* Build configuration list for PBXNativeTarget "RenRenShareUIActivityTests" */ = {
 			isa = XCConfigurationList;
@@ -1024,6 +1033,7 @@
 				189DC46C18273CF000EF43CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
