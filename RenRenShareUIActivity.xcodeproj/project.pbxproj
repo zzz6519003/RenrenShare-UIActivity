@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		18867F65182B8A45006CA0BA /* ScreenShots.png in Resources */ = {isa = PBXBuildFile; fileRef = 18867F64182B8A45006CA0BA /* ScreenShots.png */; };
+		18867F67182B8A45006CA0BA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 18867F66182B8A45006CA0BA /* README.md */; };
 		189DC43918273CF000EF43CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189DC43818273CF000EF43CE /* Foundation.framework */; };
 		189DC43B18273CF000EF43CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189DC43A18273CF000EF43CE /* CoreGraphics.framework */; };
 		189DC43D18273CF000EF43CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189DC43C18273CF000EF43CE /* UIKit.framework */; };
@@ -113,6 +114,7 @@
 
 /* Begin PBXFileReference section */
 		18867F64182B8A45006CA0BA /* ScreenShots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScreenShots.png; sourceTree = "<group>"; };
+		18867F66182B8A45006CA0BA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		189DC43518273CF000EF43CE /* RenRenShareUIActivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RenRenShareUIActivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189DC43818273CF000EF43CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		189DC43A18273CF000EF43CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -293,6 +295,7 @@
 		189DC42C18273CF000EF43CE = {
 			isa = PBXGroup;
 			children = (
+				18867F66182B8A45006CA0BA /* README.md */,
 				18867F64182B8A45006CA0BA /* ScreenShots.png */,
 				189DC43E18273CF000EF43CE /* RenRenShareUIActivity */,
 				189DC45D18273CF000EF43CE /* RenRenShareUIActivityTests */,
@@ -727,6 +730,7 @@
 				189DC5E118274C7F00EF43CE /* bottom-bar@2x.png in Resources */,
 				189DC5E418274C7F00EF43CE /* close_selected.png in Resources */,
 				189DC5EF18274C7F00EF43CE /* renren-logo-top-bar@2x.png in Resources */,
+				18867F67182B8A45006CA0BA /* README.md in Resources */,
 				18867F65182B8A45006CA0BA /* ScreenShots.png in Resources */,
 				189DC5ED18274C7F00EF43CE /* photo-frame@2x.png in Resources */,
 				189DC5E218274C7F00EF43CE /* close.png in Resources */,
