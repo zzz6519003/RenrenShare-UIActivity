@@ -40,6 +40,7 @@
 }
 
 - (IBAction)done:(id)sender {
+    
     Renren *renren = [Renren sharedRenren];
     if (![renren isSessionValid]) {
         // login renren
@@ -51,7 +52,7 @@
     [params setObject:@"status.set" forKey:@"method"];
     [params setObject:self.postBody.text forKey:@"status"];
     [renren requestWithParams:params andDelegate:self];
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.delegate activityFinish];
 }
 
 - (IBAction)dismiss:(id)sender {

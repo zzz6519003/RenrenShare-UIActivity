@@ -18,7 +18,7 @@
 }
 
 - (NSString *)activityTitle {
-    return @"发送到人人";
+    return @"人人";
 }
 
 - (UIImage *)activityImage {
