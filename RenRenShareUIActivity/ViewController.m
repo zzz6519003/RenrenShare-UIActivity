@@ -29,9 +29,12 @@
 
 - (IBAction)shareRenren:(id)sender {
     RenRenShareActivity *renren = [[RenRenShareActivity alloc] init];
-    UIActivityViewController *vc = [[UIActivityViewController alloc] initWithActivityItems:@[@"adfs"] applicationActivities:@[renren]];
-    vc.completionHandler = nil;
+    UIActivityViewController *vc = [[UIActivityViewController alloc] initWithActivityItems:@[self.shareContent.text] applicationActivities:@[renren]];
     [self presentViewController:vc animated:YES completion:nil];
+}
+
+- (IBAction)dismissKeyboard:(id)sender {
+    [self.shareContent resignFirstResponder];
 }
 
 @end

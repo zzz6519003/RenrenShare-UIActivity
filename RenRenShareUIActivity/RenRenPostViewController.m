@@ -29,6 +29,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.shareTv.text = self.shareContent;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,7 +60,8 @@
 }
 
 - (void)renren:(Renren *)renren requestDidReturnResponse:(ROResponse *)response {
-
+    UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"人人" message:@"分享成功" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [av show];
 }
 
 - (void)renren:(Renren *)renren requestFailWithError:(ROError *)error {

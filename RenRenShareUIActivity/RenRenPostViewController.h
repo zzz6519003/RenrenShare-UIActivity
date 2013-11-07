@@ -10,11 +10,14 @@
 #import "Renren.h"
 
 @protocol Activity <NSObject>
-
 - (void)activityFinish;
-
 @end
+
 @interface RenRenPostViewController : UIViewController <RenrenDelegate>
 
 @property (weak, nonatomic) id<Activity> delegate;
+
+@property (strong, nonatomic) NSString *shareContent;
+
+@property (weak, nonatomic) IBOutlet UITextView *shareTv;
 @end

@@ -41,6 +41,14 @@
     return FALSE;
 }
 
+- (void)prepareWithActivityItems:(NSArray *)activityItems {
+    for (id obj in activityItems) {
+        if ([obj isKindOfClass:[NSString class]]) {
+            self.shareContent = obj;
+        }
+    }
+}
+
 + (UIActivityCategory)activityCategory {
     return UIActivityCategoryShare;
 }
@@ -48,6 +56,7 @@
 - (UIViewController *)activityViewController {
     RenRenPostViewController *rr = [[RenRenPostViewController alloc] initWithNibName:@"RenRenPostViewController" bundle:nil];
     rr.delegate = self;
+    rr.shareContent = self.shareContent;
     return rr;
     
 }

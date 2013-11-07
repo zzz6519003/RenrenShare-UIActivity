@@ -17,4 +17,5 @@
 #import "RenRenPostViewController.h"
 @interface RenRenShareActivity : UIActivity <Activity>
 
+@property (nonatomic, strong) NSString *shareContent;
 @end
