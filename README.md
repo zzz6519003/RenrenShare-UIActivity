@@ -2,7 +2,7 @@
 
 WTF, there's no built-in Chinese-FB share?
 ## ScreenShots
-<img src="https://github.com/eddorre/SublimeERB/raw/master/erb.gif" />
+<img src="https://raw.github.com/zzz6519003/RenrenShare-UIActivity/master/ScreenShots.png" />
 
 ## Installation
 I am sure that your IQ is no less than me.
