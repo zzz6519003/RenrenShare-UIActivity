@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180B69651843573A007798AF /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 180B69611843573A007798AF /* UIImage+ImageEffects.m */; };
+		180B69661843573A007798AF /* IQFeedbackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180B69631843573A007798AF /* IQFeedbackView.m */; };
+		180B69671843573A007798AF /* addImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 180B69641843573A007798AF /* addImage.png */; };
+		180B696B1843577A007798AF /* DALinedTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180B696A1843577A007798AF /* DALinedTextView.m */; };
 		18867F65182B8A45006CA0BA /* ScreenShots.png in Resources */ = {isa = PBXBuildFile; fileRef = 18867F64182B8A45006CA0BA /* ScreenShots.png */; };
 		18867F67182B8A45006CA0BA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 18867F66182B8A45006CA0BA /* README.md */; };
 		189DC43918273CF000EF43CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189DC43818273CF000EF43CE /* Foundation.framework */; };
@@ -113,6 +117,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180B69601843573A007798AF /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		180B69611843573A007798AF /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		180B69621843573A007798AF /* IQFeedbackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQFeedbackView.h; sourceTree = "<group>"; };
+		180B69631843573A007798AF /* IQFeedbackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQFeedbackView.m; sourceTree = "<group>"; };
+		180B69641843573A007798AF /* addImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addImage.png; sourceTree = "<group>"; };
+		180B69691843577A007798AF /* DALinedTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DALinedTextView.h; sourceTree = "<group>"; };
+		180B696A1843577A007798AF /* DALinedTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DALinedTextView.m; sourceTree = "<group>"; };
 		18867F64182B8A45006CA0BA /* ScreenShots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScreenShots.png; sourceTree = "<group>"; };
 		18867F66182B8A45006CA0BA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		189DC43518273CF000EF43CE /* RenRenShareUIActivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RenRenShareUIActivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -292,6 +303,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180B695E1843571A007798AF /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				180B696818435772007798AF /* DA */,
+				180B695F1843571E007798AF /* IQ */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		180B695F1843571E007798AF /* IQ */ = {
+			isa = PBXGroup;
+			children = (
+				180B69601843573A007798AF /* UIImage+ImageEffects.h */,
+				180B69611843573A007798AF /* UIImage+ImageEffects.m */,
+				180B69621843573A007798AF /* IQFeedbackView.h */,
+				180B69631843573A007798AF /* IQFeedbackView.m */,
+				180B69641843573A007798AF /* addImage.png */,
+			);
+			name = IQ;
+			sourceTree = "<group>";
+		};
+		180B696818435772007798AF /* DA */ = {
+			isa = PBXGroup;
+			children = (
+				180B69691843577A007798AF /* DALinedTextView.h */,
+				180B696A1843577A007798AF /* DALinedTextView.m */,
+			);
+			name = DA;
+			sourceTree = "<group>";
+		};
 		189DC42C18273CF000EF43CE = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +375,7 @@
 				189DC44A18273CF000EF43CE /* Main.storyboard */,
 				189DC44D18273CF000EF43CE /* ViewController.h */,
 				189DC44E18273CF000EF43CE /* ViewController.m */,
+				180B695E1843571A007798AF /* Vendor */,
 				189DC54418274C4E00EF43CE /* UIActivity */,
 				189DC45018273CF000EF43CE /* Images.xcassets */,
 				189DC43F18273CF000EF43CE /* Supporting Files */,
@@ -738,6 +780,7 @@
 				189DC46F1827401000EF43CE /* Main~iPad.storyboard in Resources */,
 				189DC5F318274C7F00EF43CE /* small-button-normal@2x.png in Resources */,
 				189DC5E018274C7F00EF43CE /* bottom-bar.png in Resources */,
+				180B69671843573A007798AF /* addImage.png in Resources */,
 				189DC5E818274C7F00EF43CE /* input-frame.png in Resources */,
 				189DC60D18274C7F00EF43CE /* ROCheckOrderCell.xib in Resources */,
 				189DC5E518274C7F00EF43CE /* close_selected@2x.png in Resources */,
@@ -787,11 +830,13 @@
 				189DC60518274C7F00EF43CE /* ROFriendResponseItem.m in Sources */,
 				189DC44918273CF000EF43CE /* AppDelegate.m in Sources */,
 				189DC5FA18274C7F00EF43CE /* ROPayOrderInfo.m in Sources */,
+				180B69661843573A007798AF /* IQFeedbackView.m in Sources */,
 				189DC5FD18274C7F00EF43CE /* ROGetFriendsInfoRequestParam.m in Sources */,
 				189DC5D618274C7F00EF43CE /* SBJsonParser.m in Sources */,
 				189DC5FC18274C7F00EF43CE /* ROCreateAlbumRequestParam.m in Sources */,
 				189DC44518273CF000EF43CE /* main.m in Sources */,
 				189DC60F18274C7F00EF43CE /* RODialogView.m in Sources */,
+				180B69651843573A007798AF /* UIImage+ImageEffects.m in Sources */,
 				189DC5D218274C7F00EF43CE /* NSObject+SBJSON.m in Sources */,
 				189DC61318274C7F00EF43CE /* ROPublishPhotoDialogModel.m in Sources */,
 				189DC5F518274C7F00EF43CE /* ROCheckNavigationViewController.m in Sources */,
@@ -811,6 +856,7 @@
 				189DC61D18274DA400EF43CE /* RenRenPostViewController.m in Sources */,
 				189DC60118274C7F00EF43CE /* RORequestParam.m in Sources */,
 				189DC60818274C7F00EF43CE /* ROUserResponseItem.m in Sources */,
+				180B696B1843577A007798AF /* DALinedTextView.m in Sources */,
 				189DC60E18274C7F00EF43CE /* RODialogModel.m in Sources */,
 				189DC60718274C7F00EF43CE /* ROResponseItem.m in Sources */,
 				189DC5FB18274C7F00EF43CE /* ROAlbumsInfoRequestParam.m in Sources */,
