@@ -15,8 +15,9 @@
 #define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
 
 #import "RenRenPostViewController.h"
-@interface RenRenShareActivity : UIActivity <Activity>
+@interface RenRenShareActivity : UIActivity <Activity, RenrenDelegate>
 
-@property (nonatomic, strong) NSString *shareContent;
+@property (nonatomic, weak) NSString *shareContent;
+@property (nonatomic, weak) UIImage *shareImage;
 @property (nonatomic, weak) UIViewController *controller;
 @end

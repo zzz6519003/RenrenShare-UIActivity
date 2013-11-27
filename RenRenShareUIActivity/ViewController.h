@@ -11,4 +11,8 @@
 @interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *shareContent;
+
+@property (weak, nonatomic) IBOutlet UITextField *shareContentWithoutPicture;
+
+@property (weak, nonatomic) IBOutlet UIImageView *shareImage;
 @end

@@ -50,6 +50,9 @@
         if ([obj isKindOfClass:[UIViewController class]]) {
             self.controller = obj;
         }
+        if ([obj isKindOfClass:[UIImage class]]) {
+            self.shareImage = obj;
+        }
     }
 }
 
@@ -66,11 +69,34 @@
 
 - (void)performActivity {
     IQFeedbackView *bugReport = [[IQFeedbackView alloc] initWithTitle:@"Bug Report" message:nil image:nil cancelButtonTitle:@"Cancel" doneButtonTitle:@"Send"];
+    bugReport.message = self.shareContent;
+    [bugReport setImage:self.shareImage];
     [bugReport setCanAddImage:YES];
     [bugReport setCanEditText:YES];
     
     [bugReport showInViewController:self.controller completionHandler:^(BOOL isCancel, NSString *message, UIImage *image) {
+        if (!isCancel) {
+            Renren *renren = [Renren sharedRenren];
+            if (![renren isSessionValid]) {
+                // login renren
+                [renren authorizationWithPermisson:nil andDelegate:self];
+                return;
+            }
+            
+            if (self.shareImage) {
+                [renren publishPhotoSimplyWithImage:self.shareImage caption:self.shareContent];
+//                [self.delegate activityFinish];
+            } else {
+                NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:10];
+                [params setObject:@"status.set" forKey:@"method"];
+                [params setObject:message forKey:@"status"];
+                [renren requestWithParams:params andDelegate:self];
+            }
+
+        } else {
+        }
         [bugReport dismiss];
+
     }];
 
     [self activityDidFinish:YES];

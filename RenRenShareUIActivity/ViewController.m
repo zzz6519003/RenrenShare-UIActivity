@@ -29,7 +29,7 @@
 
 - (IBAction)shareRenren:(id)sender {
     RenRenShareActivity *renren = [[RenRenShareActivity alloc] init];
-    UIActivityViewController *vc = [[UIActivityViewController alloc] initWithActivityItems:@[self.shareContent.text, self] applicationActivities:@[renren]];
+    UIActivityViewController *vc = [[UIActivityViewController alloc] initWithActivityItems:@[self.shareContent.text, self.shareImage.image, self] applicationActivities:@[renren]];
     [self presentViewController:vc animated:YES completion:nil];
 }
 
@@ -37,4 +37,6 @@
     [self.shareContent resignFirstResponder];
 }
 
+- (IBAction)changePic:(id)sender {
+}
 @end
