@@ -9,6 +9,7 @@
 #import "RenRenShareActivity.h"
 #import "Renren.h"
 #import "RenRenPostViewController.h"
+#import "IQFeedbackView.h"
 #import <Social/Social.h>
 
 @implementation RenRenShareActivity
@@ -46,6 +47,9 @@
         if ([obj isKindOfClass:[NSString class]]) {
             self.shareContent = obj;
         }
+        if ([obj isKindOfClass:[UIViewController class]]) {
+            self.controller = obj;
+        }
     }
 }
 
@@ -53,15 +57,22 @@
     return UIActivityCategoryShare;
 }
 
-- (UIViewController *)activityViewController {
-    RenRenPostViewController *rr = [[RenRenPostViewController alloc] initWithNibName:@"RenRenPostViewController" bundle:nil];
-    rr.delegate = self;
-    rr.shareContent = self.shareContent;
-    return rr;
-    
-}
+//- (UIViewController *)activityViewController {
+//    RenRenPostViewController *rr = [[RenRenPostViewController alloc] initWithNibName:@"RenRenPostViewController" bundle:nil];
+//    rr.delegate = self;
+//    rr.shareContent = self.shareContent;
+//    return rr;
+//}
 
 - (void)performActivity {
+    IQFeedbackView *bugReport = [[IQFeedbackView alloc] initWithTitle:@"Bug Report" message:nil image:nil cancelButtonTitle:@"Cancel" doneButtonTitle:@"Send"];
+    [bugReport setCanAddImage:YES];
+    [bugReport setCanEditText:YES];
+    
+    [bugReport showInViewController:self.controller completionHandler:^(BOOL isCancel, NSString *message, UIImage *image) {
+        [bugReport dismiss];
+    }];
+
     [self activityDidFinish:YES];
 }
 - (void)activityFinish {

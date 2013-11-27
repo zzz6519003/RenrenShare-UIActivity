@@ -18,4 +18,5 @@
 @interface RenRenShareActivity : UIActivity <Activity>
 
 @property (nonatomic, strong) NSString *shareContent;
+@property (nonatomic, weak) UIViewController *controller;
 @end
