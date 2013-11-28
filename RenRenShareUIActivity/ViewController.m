@@ -29,7 +29,12 @@
 
 - (IBAction)shareRenren:(id)sender {
     RenRenShareActivity *renren = [[RenRenShareActivity alloc] init];
-    UIActivityViewController *vc = [[UIActivityViewController alloc] initWithActivityItems:@[self.shareContent.text, self.shareImage.image, self] applicationActivities:@[renren]];
+    UIActivityViewController *vc = nil;
+    if (self.shareImage.image) {
+        vc = [[UIActivityViewController alloc] initWithActivityItems:@[self.shareContent.text, self.shareImage.image, self] applicationActivities:@[renren]];
+    } else {
+        vc = [[UIActivityViewController alloc] initWithActivityItems:@[self.shareContent.text, self] applicationActivities:@[renren]];
+    }
     [self presentViewController:vc animated:YES completion:nil];
 }
 
@@ -38,5 +43,6 @@
 }
 
 - (IBAction)changePic:(id)sender {
+    self.shareImage = nil;
 }
 @end

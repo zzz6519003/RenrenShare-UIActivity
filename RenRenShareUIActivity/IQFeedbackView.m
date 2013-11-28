@@ -189,7 +189,12 @@
 	_image = image;
 	
 	if (_image == nil)	[buttonImageAttached setImage:defaultImage forState:UIControlStateNormal];
-	else				[buttonImageAttached setImage:_image forState:UIControlStateNormal];
+	else				 {
+        [buttonImageAttached setImage:_image forState:UIControlStateNormal];
+        if (_chooseImageComp) {
+            self.chooseImageComp(_image);
+        }
+    }
 }
 
 -(UIImage *)image
@@ -284,10 +289,11 @@
 	}
 }
 
--(void)showInViewController:(UIViewController*)controller completionHandler:(IQFeedbackCompletion)completionHandler
+-(void)showInViewController:(UIViewController*)controller completionHandler:(IQFeedbackCompletion)completionHandler andImageCompletion:(IQChooseImageCompletion)imageCompletion
 {
 	_currentController = controller;
 	_completionHandler = completionHandler;
+    _chooseImageComp = imageCompletion;
     
     CGSize viewSize = controller.view.bounds.size;
     

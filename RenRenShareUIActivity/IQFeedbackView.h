@@ -11,9 +11,12 @@
 #define IOS_7_OR_GREATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0f)
 
 typedef void(^IQFeedbackCompletion)(BOOL isCancel, NSString* message, UIImage* image);
+typedef void(^IQChooseImageCompletion)(UIImage *image);
+
 
 @interface IQFeedbackView : UIView
 
+@property (nonatomic, strong) IQChooseImageCompletion chooseImageComp;
 @property(nonatomic, strong) NSString* title;
 @property(nonatomic, strong) NSString* message;
 @property(nonatomic, strong) UIImage* image;
@@ -23,8 +26,7 @@ typedef void(^IQFeedbackCompletion)(BOOL isCancel, NSString* message, UIImage* i
 
 - (id)initWithTitle:(NSString *)title message:(NSString *)message image:(UIImage*)image cancelButtonTitle:(NSString *)cancelButtonTitle doneButtonTitle:(NSString *)doneButtonTitle;
 
--(void)showInViewController:(UIViewController*)controller completionHandler:(IQFeedbackCompletion)completionHandler;
-
+-(void)showInViewController:(UIViewController*)controller completionHandler:(IQFeedbackCompletion)completionHandler andImageCompletion:(IQChooseImageCompletion)imageCompletion;
 -(void)dismiss;
 
 @end

@@ -85,18 +85,19 @@
             
             if (self.shareImage) {
                 [renren publishPhotoSimplyWithImage:self.shareImage caption:self.shareContent];
-//                [self.delegate activityFinish];
+                //                [self.delegate activityFinish];
             } else {
                 NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:10];
                 [params setObject:@"status.set" forKey:@"method"];
                 [params setObject:message forKey:@"status"];
                 [renren requestWithParams:params andDelegate:self];
             }
-
+            
         } else {
         }
         [bugReport dismiss];
-
+    } andImageCompletion:^(UIImage *image) {
+        self.shareImage = image;
     }];
 
     [self activityDidFinish:YES];
