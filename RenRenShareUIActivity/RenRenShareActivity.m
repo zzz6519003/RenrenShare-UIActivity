@@ -29,15 +29,15 @@
 
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems {
     
-	for (id activityItem in activityItems) {
-		if ([activityItem isKindOfClass:[NSString class]]) {
+    for (id activityItem in activityItems) {
+	if ([activityItem isKindOfClass:[NSString class]]) {
             return TRUE;
-		}
+	}
     }
     for (id activityItem in activityItems) {
-		if ([activityItem isKindOfClass:[UIImage class]]) {
+	if ([activityItem isKindOfClass:[UIImage class]]) {
             return TRUE;
-		}
+	}
     }
     return FALSE;
 }
